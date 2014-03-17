@@ -18,27 +18,31 @@
     <![endif]-->
   </head>
   <body>
-  <header class="navbar navbar-static-top bs-docs-nav" id="top" role="banner">
-  <div class="container">
+<!--   <header class="navbar navbar-static-top bs-docs-nav" id="top" role="banner"> -->
+  <!-- <div class="container-fluid"> -->
+    <nav class="navbar navbar-default" id="header"   role="navigation">
+     <!-- Brand and toggle get grouped for better mobile display --> 
     <div class="navbar-header">
-      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      
+    
+      <a class="navbar-brand" id="logo"  href="" disabled><h1><img src="img/logo2.png"/></h1></a>
       
     </div>
-    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
-      <ul class="nav navbar-nav">
-        <a class="navbar-brand" id="logo"  href="" disabled><h1><img src="img/logo2.png"/></h1></a>
-      </ul>
-
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Portfolio</a></li>
+    <div class="collapse navbar-collapse bs-navbar-collapse" id="bs-example-navbar-collapse-1" style="background-color: rgb(166, 181, 40);height:400px;" role="navigation">
+<!--       <ul class="nav navbar-nav ">
+        <li class="brand"><a class="navbar-brand" id="logo"  href="" disabled><img src="img/logo2.png"/></a></li>
+      </ul> -->
+        
+      <ul class="nav navbar-nav navbar-right" >
+        
+        <li><a href="">Portfolio</a></li>
         <li><a href="company.php">company</a></li>
-        <li><a href="#">About</a></li>
+        <li><a href="">About</a></li>
         
         <li><a href="#"><small>Services</small></a></li>
         <li><a href="#"><small>Process</small></a></li>
@@ -56,9 +60,11 @@
        <!--  </form>  -->     
       </ul>
 
-    </nav>
+    </div>
   </div>
-</header>
+</nav>
+  <!-- </div> -->
+<!-- </header> -->
 
     <!-- Stack the columns on mobile by making one full-width and the other half-width -->
 <div class="row">
