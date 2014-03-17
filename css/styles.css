@@ -1,0 +1,62 @@
+body{
+	padding:0;
+	margin:0;
+}
+.nav{
+
+	background-color: rgb(166, 181, 40);
+}
+.navbar-brand{
+
+	padding-top: 0;
+}
+/*top navigation bar*/
+#logo{
+	padding:0px;
+	margin:0px;
+
+}
+img{
+	width:300px;
+}
+
+#navWell{
+	margin:0;
+}
+#navBar{
+	
+	/*display: block;*/
+	position:relative;
+	top:140px;
+	font-size: 20px;
+	height:100%;
+}
+#navBarLogo{
+	margin-bottom:20px;
+	height:180px;
+}
+#navBar a:hover {
+		background-color:green;
+
+}
+
+.leftSideBar{
+	
+	width:350px;
+}
+
+.leftSideBar ul li{
+	background-color:rgb(150, 140, 21);
+	padding:20px;
+}
+#sidebarWell{
+
+	background-color:rgb(150, 140, 21);
+	width:200px;
+	height:600px;
+	margin-left:0;
+}
+#rightWell{
+	background-color:rgb(150, 140, 21);
+	margin-left: 0;
+}
