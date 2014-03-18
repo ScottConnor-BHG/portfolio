@@ -25,7 +25,7 @@
         </div>
  -->    <nav class="navbar navbar-default" id="header"   role="navigation">
      <!-- Brand and toggle get grouped for better mobile display --> 
-    <div class="navbar-header">
+    <div class="navbar-header" style="background-color: rgb(166, 181, 40);">
       <button type="button" class="navbar-toggle" style="background-color: rgb(166, 181, 40);" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
@@ -70,40 +70,57 @@
 <!-- </header> -->
 
     <!-- Stack the columns on mobile by making one full-width and the other half-width -->
-<div class="container-fluid">
-<div class="row">
-    <div class="col-md-4" style="margin:0;" id="sideNav" >
-      
-          <div class="leftSideBar" >
-            </ul>
+<div class="container-liquid body" id="content">
+  <div class="well  clearfix">
+  <div class="well  clearfix" >
+    <div class="row">
+      <div class="col-xs-12 col-sm-4 col-sm-push-8" style="min-height: 100px;">
+        <div class="sticky-nav affix" data-spy="affix" data-offset-top="122" id="rightNav">
+              </ul>
             <ul class="list-group">
-            <li class="list-group-item"><a href="#">Resume</a></li>
-            <li class="list-group-item"><a href="#">Resume</a></li>
-            <li class="list-group-item"><a href="#">Resume</a></li>
-            <li class="list-group-item"><a href="#">Resume</a></li>
-            <li class="list-group-item"><a href="#">Resume</a></li>
-            <li class="list-group-item" style="height:500px;"></li>
+            <li class="list-group-item"><a id="resume" href="#resume">Resume</a></li>
+             <ul class="submenu">
+              <li><IFRAME id="resume"src="tmp/final_resume.pdf" width="100%" height="100%" frameborder="no" scrolling="no"></IFRAME></li>
+              
             </ul>
-          </div>
-
-    </div>
-
-      <div class="col-md-8" id="content" >
-        <div class="well" id="rightWell">
-<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
-      totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae 
-      dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia cor magni dolores 
-      eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, 
-      sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
-      Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?</p>
+            <li class="list-group-item"><a href="#">Resume</a></li>
+            <li class="list-group-item"><a href="#">Resume</a></li>
+            <li class="list-group-item"><a href="#">Resume</a></li>
+            <li class="list-group-item"><a href="#top">Back to Top</a></li>
+            
+            </ul>
         </div>
       </div>
+      <div class="col-xs-12 col-sm-8 col-sm-pull-4 help-content-container">
+          <a name="resume"></a>
+          <div class="well left-content  clearfix">
+            <!-- <IFRAME id="resume"src="tmp/final_resume.pdf" width="100%" height="815px" padding="0" margin="0" frameborder="no" scrolling="auto"></IFRAME> -->
+          </div>
+      </div>
+    </div>
+    </div>
+  </div>
 </div>
-</div>
+  </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+    <script>
+          //make submenus appear 
+      $('.submenu').hide();
+      //slide down submenu if has one
+      $("li:has(ul)").click(function(){
+
+      $("ul",this).slideDown();
+      });
+
+      // $(function(){
+      // $('#resume').show();
+      // });
+    
+    // $(elem).show();
+    </script>
   </body>
 </html>

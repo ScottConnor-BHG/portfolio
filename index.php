@@ -20,7 +20,9 @@
   <body>
   
     <nav class="navbar navbar-default"   role="navigation">
-  
+<!--         <div id="navArrow">
+            <img src="img/darrow.png"/>
+        </div> -->
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header" id="navBarLogo" >
       <button type="button"  class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -29,7 +31,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" id="logo"  href="" disabled><h1><img src="img/logo2.png"/></h1></a>
+      <a class="navbar-brand" id="logo"  href="index.php" ><h1><img src="img/logo2.png"/></h1></a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -37,9 +39,9 @@
 
       <ul class="nav navbar-nav navbar-right" id="navBar">
         
-        <li><a href="#">Portfolio</a></li>
-        <li><a href="#">Resume</a></li>
-        <li><a href="#">About</a></li>
+        <li><a href="portfolio.php">Portfolio</a></li>
+        <li><a href="resume.php">Resume</a></li>
+        <li><a href="about.php">About</a></li>
         
         <li><a href="#"><small>Services</small></a></li>
         <li><a href="#"><small>Process</small></a></li>
