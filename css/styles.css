@@ -1,6 +1,7 @@
 body{
 	padding:0;
 	margin:0;
+
 }
 header{
 	margin-left: 0;
@@ -8,7 +9,11 @@ header{
 }
 #header{
 	height:130px;
-	margin:0;
+	width:100%;
+	margin-bottom:0;
+	margin-right:0;
+
+
 }
 .container-fluid{
 	margin:0;
@@ -59,10 +64,13 @@ nav li{
 }*/
 
 .leftSideBar{
-	position:;
-	width:350px;
+	margin-right:0;
+	width:100%;
 }
-
+#sideNav{
+	padding:0;
+	height:800px;
+}
 .leftSideBar ul li{
 	background-color:rgb(150, 140, 21);
 	padding:20px;
@@ -72,10 +80,18 @@ nav li{
 
 	background-color:rgb(150, 140, 21);
 	width:200px;
-	height:600px;
-	margin-left:0;
+	height:800px;
+	margin-right:0;
 }
 #rightWell{
 	background-color:rgb(150, 140, 21);
-	margin-left: 0;
+	width:100%;
+	height:800px;
+	/*position:relative;
+	left:-30px;*/
+}
+#content{
+	margin:0;
+
+	padding:0;
 }
