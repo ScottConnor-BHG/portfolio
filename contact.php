@@ -65,8 +65,8 @@
     <div class="container form">
 
       <div class="well">
-        <h5>Tell us a bit about yourself:</h5>
-        <form class="form-inline" role="form">
+        <h5 style="margin-bottom:-30px;">Tell us a bit about yourself:</h5>
+        <form class="form-inline" role="form" method="post">
 
           <div class="form-group">
             <label class="sr-only" for="name"></label>
@@ -78,13 +78,13 @@
           </div>
 
           <div class="form-group">
-            <label class="sr-only" for="name"></label>
-            <input type="name" class="form-control" id="name" placeholder="Your Name">
+            <label class="sr-only" for="email"></label>
+            <input type="email" class="form-control" id="email" placeholder="Email Address">
           </div>
           
           <div class="form-group">
-            <label class="sr-only" for="organization"></label>
-            <input type="organization" class="form-control" id="organization" placeholder="Organization">
+            <label class="sr-only" for="tel"></label>
+            <input type="tel" class="form-control" id="tel" placeholder="Phone Number">
           </div>
           <h5>And now a little about your project:</h5>
           <div class="form-group clearfix">
@@ -92,15 +92,18 @@
           </div>
 
           <div class="form-group">
-            <label class="sr-only" for="name"></label>
-            <input type="name" class="form-control" id="name" placeholder="Your Name">
+            <label class="sr-only" for="timeline"></label>
+            <input type="timeline" class="form-control" id="timeline" placeholder="Time Frame">
           </div>
           
           <div class="form-group">
-            <label class="sr-only" for="organization"></label>
-            <input type="organization" class="form-control" id="organization" placeholder="Organization">
+            <label class="sr-only" for="budget"></label>
+            <input type="budget" class="form-control" id="organization" placeholder="Approximate Budget">
           </div>
-          <!-- <button type="submit" class="btn btn-default btn-primary">Sign in</button> -->
+          <div class="row">
+              <button type="submit" class="btn btn-default btn-primary">Send</button>
+          </div>
+          
         </form>
       </div> <!-- well -->
 

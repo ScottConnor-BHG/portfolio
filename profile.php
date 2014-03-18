@@ -9,7 +9,8 @@
     <meta name="author" content="">
     <link rel="shortcut icon" href="../../assets/ico/favicon.ico">
 
-    <title>Dashboard Template for Bootstrap</title>
+    <title>Scott Connor | Web Designer</title>
+
 
     <!-- Bootstrap core CSS -->
     <link href="/css/bootstrap.min.css" rel="stylesheet">
@@ -29,7 +30,11 @@
 
   <body>
 
+
     <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+     <p>This is a paragraph.</p>
+     <button class="btn1">Slide up</button>
+     <button class="btn2">Slide down</button>
       <div class="container-fluid">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -54,6 +59,24 @@
         </div>
       </div>
     </div>
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title" id="myModalLabel">Resume</h4>
+          </div>
+          <div class="modal-body">
+            <IFRAME id="resume"src="tmp/final_resume.pdf" width="100%" height="690px" padding="0" margin="0" frameborder="no" scrolling="auto"></IFRAME>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        
+          </div>
+        </div>
+      </div>
+    </div>
 
 
     <div class="container-fluid">
@@ -61,7 +84,7 @@
         <div class="col-sm-3 col-md-2 sidebar">
           <ul class="nav nav-sidebar">
             <li class="active"><a href="#">About Me</a></li>
-            <li><a href="#">Reports</a></li>
+            <li><a href="" data-toggle="modal" data-target="#myModal">Resume</a></li>
             <li><a href="#">Analytics</a></li>
             <li><a href="#">Export</a></li>
           </ul>
@@ -150,5 +173,15 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="/js/bootstrap.min.js"></script>
     <script src="../../assets/js/docs.min.js"></script>
+        <script>
+$(document).ready(function(){
+  $(".btn1").click(function(){
+    $("p").slideUp(1000);
+  });
+  $(".btn2").click(function(){
+    $("p").slideDown(1000);
+  });
+});
+    </script>
   </body>
 </html>
