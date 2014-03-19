@@ -26,16 +26,23 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+              
+              <!-- <img src="/img/snow.jpg" id="banner" class="img-responsive"  alt="Responsive image">
+               <button class="btn1" style="float:right;">Slide up</button>
+               <button class="btn2" style="float:right;">Slide down</button> -->
+<!--         <img src="/img/snow.jpg" class="img-responsive" alt="Responsive image">
+        <button class="btn1" >Slide up</button>
+        <button class="btn2" >Slide down</button> -->
   </head>
 
   <body>
 
 
+
     <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-     <p>This is a paragraph.</p>
-     <button class="btn1">Slide up</button>
-     <button class="btn2">Slide down</button>
       <div class="container-fluid">
+       <!--  <img src="/img/snow.jpg"   alt=""> -->
+
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
             <span class="sr-only">Toggle navigation</span>
@@ -43,6 +50,8 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
+
+          
           <a class="navbar-brand" href="#">Scott Connor  <small>Web Designer<small></small></a>
         </div>
         <div class="navbar-collapse collapse">
@@ -181,6 +190,9 @@ $(document).ready(function(){
   $(".btn2").click(function(){
     $("p").slideDown(1000);
   });
+    // $("head").show();
+    // $("body").hide();
+  
 });
     </script>
   </body>
