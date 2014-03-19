@@ -5,7 +5,7 @@
 
 /* Move down content because we have a fixed navbar that is 50px tall */
 body {
-  padding-top: 50px;
+  /*padding-top: 50px;*/
   z-index:0;
 }
 /*************banner*************/
@@ -20,10 +20,10 @@ body {
   left:100px;
 }
 */
-p img{
+/*p img{
   width:40%;
   height:50%;
-}
+}*/
 
 /*
  * Global add-ons
@@ -78,12 +78,19 @@ p img{
 /*
  * Main content
  */
-
+ .body1{
+  margin-top:0;
+ }
+.body2{
+  display: none;
+}
 .main {
+  margin-top:280px;
   padding: 20px;
 }
 @media (min-width: 768px) {
   .main {
+
     padding-right: 40px;
     padding-left: 40px;
   }

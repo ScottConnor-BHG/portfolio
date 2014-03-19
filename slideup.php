@@ -35,14 +35,14 @@
         <button class="btn2" >Slide down</button> -->
   </head>
 
-  <body>
-    <div class="body1">
-      <img src="/img/snow.jpg" class="img-responsive" alt="Responsive image">
-            <button class="btn1" >Slide up</button>
-            <button class="btn2" >Slide down</button>
-    </div>
 
-  <div class="body2">
+  <body>
+<div class="body1">
+  <img src="/img/snow.jpg" class="img-responsive" alt="Responsive image">
+        <button class="btn1" >Slide up</button>
+        <button class="btn2" >Slide down</button>
+</div>
+<div class="body2" >
     <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <div class="container-fluid">
        <!--  <img src="/img/snow.jpg"   alt=""> -->
@@ -185,18 +185,18 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="/js/bootstrap.min.js"></script>
-     <!-- <script src="../../assets/js/docs.min.js"></script>-->
+     <!--<script src="../../assets/js/docs.min.js"></script>-->
         <script>
-            $(document).ready(function(){
-            $(".btn1").click(function(){
-            $(".body1").slideUp(1000);
-            $(".body2").slideDown(1000);
-            });
+$(document).ready(function(){
+  $(".btn1").click(function(){
+    $(".body1").slideUp(1000);
+    $(".body2").slideDown(1000);
+  });
 
-             
-            // $("body").hide();
-
-            });
+     
+    // $("body").hide();
+  
+});
     </script>
   </body>
 </html>
