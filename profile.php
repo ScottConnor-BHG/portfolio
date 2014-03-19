@@ -38,8 +38,12 @@
   <body>
     <div class="body1">
       <img src="/img/snow.jpg" class="img-responsive" alt="Responsive image">
-            <button class="btn1" >Slide up</button>
-            <button class="btn2" >Slide down</button>
+            
+            <button type="button" class="btn1 btn-default btn-lg">
+              <span class="glyphicon glyphicon-open"></span> 
+            </button>
+            <!-- <button class="btn1" >Slide up</button> -->
+           
     </div>
 
   <div class="body2">

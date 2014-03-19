@@ -76,7 +76,7 @@ body {
 
 
 /*
- * Main content
+ * Main content and slider
  */
  .body1{
   margin-top:0;
@@ -88,7 +88,7 @@ body {
 }
 .main {
   position:relative;
-  bottom:-400px;
+  bottom:-300px;
   padding: 20px;
   overflow-y: auto;
 }
@@ -102,6 +102,16 @@ body {
 .main .page-header {
   margin-top: 0px;
 }
+.btn1{
+  position:absolute;
+  top:50%;
+  left: 50%;
+   z-index:1001;
+   size: 1000px;
+   background-color: black;
+   background-opacity:1;
+}
+
 
 
 /*
