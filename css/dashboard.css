@@ -7,6 +7,7 @@
 body {
   /*padding-top: 50px;*/
   z-index:0;
+
 }
 /*************banner*************/
 /*#banner{
@@ -78,19 +79,14 @@ body {
 /*
  * Main content and slider
  */
- .body1{
-  margin-top:0;
-  z-index:1000;
- }
-.body2{
-  display:none;
-  z-index:10;
-}
+
+
 .main {
   position:relative;
-  bottom:-300px;
+  top:51px;
   padding: 20px;
-  overflow-y: auto;
+  background-color: rgb(237,195,104);
+  /*overflow-y: auto;*/
 }
 @media (min-width: 768px) {
   .main {
@@ -98,21 +94,50 @@ body {
     padding-right: 40px;
     padding-left: 40px;
   }
+
 }
 .main .page-header {
   margin-top: 0px;
+}
+ .body1{
+
+  margin-top:0;
+  z-index:1000;
+ }
+.body2{
+  display:none;
+  z-index:10;
 }
 .btn1{
   position:absolute;
   top:50%;
   left: 50%;
-   z-index:1001;
-   size: 1000px;
-   background-color: black;
-   background-opacity:1;
+
+  z-index:1001;
+  background-color: black;
+  opacity:0.7;
+
 }
+.btn1 i{
+  color:white;
+  width:70px;
 
+}
+.btn1:hover i{
+  color:black;
+  width:70px;
 
+}
+.well .bio{
+  background-color: rgb(237,195,104);
+}
+.submenu{
+  list-style: none;
+}
+.submenu li a:hover{
+  border-right: 1px solid black;
+
+}
 
 /*
  * Placeholder dashboard ideas
@@ -180,6 +205,12 @@ body {
 #message{
   width:400px;
   margin-left:40px;
+}
+.page-header{
+  font-family: 'Tangerine', serif;
+}
+.sub-header{
+  font-family: 'Tangerine', serif;
 }
 
 /*******************************************BLOG***************************************/

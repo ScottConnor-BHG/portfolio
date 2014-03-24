@@ -9,7 +9,7 @@
     <meta name="author" content="">
     <link rel="shortcut icon" href="../../assets/ico/favicon.ico">
 
-    <title>Dashboard Template for Bootstrap</title>
+    <title>Scott Connor | Web Designer</title>
 
     <!-- Bootstrap core CSS -->
     <link href="/css/bootstrap.min.css" rel="stylesheet">
@@ -66,48 +66,51 @@
 
       <div class="well">
         <h5 style="margin-bottom:-30px;">Tell us a bit about yourself:</h5>
-        <form class="form-inline" role="form" method="post">
+        <form class="form-inline"  action="email.php" method="post">
 
           <div class="form-group">
             <label class="sr-only" for="name"></label>
-            <input type="name" class="form-control" id="name" placeholder="Your Name">
-          </div>
+            <input type="text" class="form-control" name="name"id="name" placeholder="Your Name">
+          </div> 
           <div class="form-group">
             <label class="sr-only" for="organization"></label>
-            <input type="organization" class="form-control" id="organization" placeholder="Organization">
+            <input type="text" class="form-control" name="organization" id="organization" placeholder="Organization">
           </div>
 
           <div class="form-group">
             <label class="sr-only" for="email"></label>
-            <input type="email" class="form-control" id="email" placeholder="Email Address">
+            <input type="text" class="form-control" name="email" id="email" placeholder="Email Address">
           </div>
           
           <div class="form-group">
             <label class="sr-only" for="tel"></label>
-            <input type="tel" class="form-control" id="tel" placeholder="Phone Number">
+            <input type="text" class="form-control" id="tel" name="tel" placeholder="Phone Number">
           </div>
           <h5>And now a little about your project:</h5>
           <div class="form-group clearfix">
-            <textarea id="message" class="form-control" rows="4"></textarea>
+            <textarea id="message" class="form-control" name="message" rows="4"></textarea>
           </div>
 
           <div class="form-group">
             <label class="sr-only" for="timeline"></label>
-            <input type="timeline" class="form-control" id="timeline" placeholder="Time Frame">
+            <input type="text" class="form-control" name ="timeline" id="timeline" placeholder="Time Frame">
           </div>
           
           <div class="form-group">
             <label class="sr-only" for="budget"></label>
-            <input type="budget" class="form-control" id="organization" placeholder="Approximate Budget">
+            <input type="text" class="form-control" id="budget" name="budget" placeholder="Approximate Budget">
           </div>
           <div class="row">
-              <button type="submit" class="btn btn-default btn-primary">Send</button>
+              <input type="submit" class="btn btn-default btn-primary"></input>
           </div>
           
         </form>
       </div> <!-- well -->
 
         
+
+
+       
         
         
 

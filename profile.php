@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="shortcut icon" href="../../assets/ico/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 
     <title>Scott Connor | Web Designer</title>
 
@@ -37,16 +38,16 @@
 
   <body>
     <div class="body1">
-      <img src="/img/snow.jpg" class="img-responsive" alt="Responsive image">
+      <img src="/img/snow.jpg" class="img-responsive" id="banner" alt="Responsive image">
             
-            <button type="button" class="btn1 btn-default btn-lg">
-              <span class="glyphicon glyphicon-open"></span> 
+            <button type="button"  class="btn1 btn-default btn-lg">
+              <i class="fa fa-chevron-down"></i> 
             </button>
             <!-- <button class="btn1" >Slide up</button> -->
            
     </div>
 
-  <div class="body2">
+  <div class="body2" id="body2">
     <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <div class="container-fluid">
        <!--  <img src="/img/snow.jpg"   alt=""> -->
@@ -60,7 +61,7 @@
           </button>
 
           
-          <a class="navbar-brand" href="#">Scott Connor  <small>Web Designer<small></small></a>
+          <a class="navbar-brand" href="#">Scott Connor  | <small>Web Designer<small></small></a>
         </div>
         <div class="navbar-collapse collapse">
           <form class="navbar-form navbar-right">
@@ -95,17 +96,21 @@
       </div>
     </div>
 
-
+<!-- ********sidebar************** -->
     <div class="container-fluid">
       <div class="row">
         <div class="col-sm-3 col-md-2 sidebar">
           <ul class="nav nav-sidebar">
-            <li class="active"><a href="#">About Me</a></li>
+            <li class="active"><a href="#">About Me</a>
+                  <ul class="submenu">
+                  <li><a  href="#hobbies">Hobbies</a></li>
+                  </ul>
+            </li>
             <li><a href="" data-toggle="modal" data-target="#myModal">Resume</a></li>
             <li><a href="#">Analytics</a></li>
             <li><a href="#">Export</a></li>
           </ul>
-          <ul class="nav nav-sidebar">
+<!--           <ul class="nav nav-sidebar">
             <li><a href="">Nav item</a></li>
             <li><a href="">Nav item again</a></li>
             <li><a href="">One more nav</a></li>
@@ -116,29 +121,44 @@
             <li><a href="">Nav item again</a></li>
             <li><a href="">One more nav</a></li>
             <li><a href="">Another nav item</a></li>
-          </ul>
+          </ul> -->
         </div>
+        <!-- ********About ME************** -->
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
           <h1 class="page-header">About Me</h1>
-
+        <div class="well">
           <div class="row placeholders">
             <div class="col-xs-6 col-sm-3 placeholder">
-              <img src="/img/logo2.png" class="img-responsive" alt="Generic placeholder thumbnail">
-              <h4>Label</h4>
-              <span class="text-muted">Something else</span>
-            </div>
-            <div class="col-xs-6 col-sm-3 placeholder">
+              <img src="/img/me.jpeg" class="img-responsive" alt="Generic placeholder thumbnail">
 
             </div>
-            <div class="col-xs-6 col-sm-3 placeholder">
-
+            <div class="col-xs-12 col-sm-6 placeholder">
+              <div class="well bio">
+              <h3>Scott Connor</h3>
+            </div>
+            <div class="well bio">
+              <span class="text-muted">Born to build your website!</span>
+            </div>
+              
+              <div class="well bio">
+                <h4>Location: Burlington, Vermont</h4>
+                <h4>Email: scottay81[at]gmail.com</h4>
+              </div> 
+            </div>
+            <div class="col-xs-12 col-sm-6 placeholder">
+<!--               <div class="well bio">
+                <h4>Location: Burlington, Vermont</h4>
+                <h4>Email: scottconnor[at]bluehousegroup.com</h4>
+              </div>  -->
             </div>
             <div class="col-xs-6 col-sm-3 placeholder">
-  
+            
             </div>
+            <a  name="hobbies"></a>
           </div>
-
-          <h2 class="sub-header">Recent Work</h2>
+        </div>
+      
+          <h2 class="sub-header">Hobbies</h2>
         <!-- Carousel
     ================================================== -->
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -153,9 +173,10 @@
           <img data-src="/img/logo2.png" alt="First slide">
           <div class="container">
             <div class="carousel-caption">
-              <h1>Example headline.</h1>
+              <img src="/img/snow.jpg" class="img-responsive" id="banner" alt="Responsive image">
+              <<!-- h1>Example headline.</h1>
               <p>Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p> -->
             </div>
           </div>
         </div>
@@ -163,9 +184,7 @@
           <img data-src="/img/logo2.png" alt="Second slide">
           <div class="container">
             <div class="carousel-caption">
-              <h1>Another example headline.</h1>
-              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+              <img src="/img/snow.jpg" class="img-responsive" id="banner" alt="Responsive image">
             </div>
           </div>
         </div>
@@ -173,9 +192,11 @@
           <img data-src="holder.js/900x500/auto/#555:#5a5a5a/text:Third slide" alt="Third slide">
           <div class="container">
             <div class="carousel-caption">
-              <h1>One more for good measure.</h1>
+              <img src="/img/snow.jpg" class="img-responsive" id="banner" alt="Responsive image">
+
+<!--               <h1>One more for good measure.</h1>
               <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p> -->
             </div>
           </div>
         </div>
@@ -192,13 +213,24 @@
      <!-- <script src="../../assets/js/docs.min.js"></script>-->
         <script>
             $(document).ready(function(){
-            $(".btn1").click(function(){
-            $(".body1").slideUp(1000);
-            $(".body2").slideDown(1000);
-            });
+                //hide submenu until clicked
+                $('.submenu').hide();
+
+                      $("li:has(ul)").click(function(){
+
+                      $("ul",this).slideDown();
+                      });
+          
+                $(".body2").hide();
+                $(".btn1").click(function(){
+                $(".body1").slideUp(1000);
+                $(".btn1").hide();
+                 $(".body2").show();
+                // delayedShow();
+                });
 
              
-            // $("body").hide();
+            // 
 
             });
     </script>
